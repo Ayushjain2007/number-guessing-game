@@ -45,8 +45,8 @@ def display_report(computer,attempt,status): #Displaying to print
     print("         GAME REPORT          ")
     print("="*50)
     print("Computer Guessed Number: ",computer)
-    print("Total attempts         : ",status)
-    print("Performance            : ",attempt)
+    print("Total attempts         : ",attempt)
+    print("Performance            : ",status)
     print("="*50)
 def main():
     while True:
