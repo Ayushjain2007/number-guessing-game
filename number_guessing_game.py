@@ -14,7 +14,7 @@ def play_game():
         except Exception as e:
             print("Please enter only numbers.",e)#If user enters strings the program gets terminated by function exit()
             exit()                                # as strings not supported here for int case
-        if player < 0 or player > 100:
+        if player < 1 or player > 100:
             print("Error.Choose between 1 to 100!")
             exit()
         attempt+=1
@@ -53,7 +53,7 @@ def main():
         display_title()
         computer,attempt=play_game()
         status=calculate_status(attempt)
-        display_report(computer,status,attempt)
+        display_report(computer,attempt,status)
         choice=input("\nPlay Again? (Y/N): ").upper()
         if choice == "N":
             print("\nThank you for playing.")
